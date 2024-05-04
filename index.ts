@@ -32,11 +32,12 @@ let user_Answer = await inquirer.prompt(
     ]
 )
  
-
 let fromAmount = currency[user_Answer.from]     // exchange rate
 let toAmount = currency[user_Answer.to]         // exchange rate
 let amount =  user_Answer.amount
 let baseAmount = amount / fromAmount      // USD base currency // 4
 let convertedAmount = baseAmount * toAmount
 console.log(convertedAmount);
+
+console.log('THE END');
 
